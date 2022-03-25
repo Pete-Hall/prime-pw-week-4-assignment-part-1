@@ -6,10 +6,10 @@ console.log('***** Function Practice *****')
 
 // 1. Function to return 'Hello World!'
 function hello() {
-  return 'Hello World!'; // wut...it literally already returns 'Hello World! without me needing to add anything in.
+  return 'Hello World!';
 }
 // Call the function to test
-console.log('Test - should say "Hello World!"', hello()); // function is already called in the console.log and returns Hello World!
+console.log('Test - should say "Hello World!"', hello());
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
@@ -43,11 +43,6 @@ function isPositive( number ) {
     return false;
   }
 }
-/* Did this on my own before seeing the next part of the question...
-console.log('in isPositive using 200:', isPositive(200));
-console.log('in isPositive using 0:', isPositive(0));
-console.log('in isPositive using -3:', isPositive(-3));
- */
 
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
@@ -142,3 +137,20 @@ console.log('in positiveNumbersArray using [595,4.523,-0.5,0,7], expecting [595,
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+// Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function. For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10. (https://edabit.com/challenge/4gzDuDkompAqujpRi)
+
+function addUp(number) {
+  let sumOutput = 0;
+  // for loop runs for 'number of times', counting down starting at the number argument.
+  for(i = number; i > 0; i--) {
+    //console.log(i)
+    // keep track of how many times the loop runs, adding it into itself. 
+    sumOutput += i;
+  }
+  return sumOutput;
+}
+console.log('in addUp, passing 4, expecting 10 as the output:', addUp(4));
+console.log('in addUp, passing 13, expecting 91 as the output:', addUp(13));
+console.log('in addUp, passing 600, expecting 180300 as the output:', addUp(600));
+
