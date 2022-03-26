@@ -25,13 +25,13 @@ function addNumbers( firstNumber, secondNumber ) {
   // return firstNumber + secondNumber;
   return firstNumber + secondNumber;
 }
-console.log('in addNumbers using 2 and 4:', addNumbers(2, 4));
+console.log('from addNumbers using 2 and 4:', addNumbers(2, 4));
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( numberOne, numberTwo, numberThree){
   return numberOne * numberTwo * numberThree;
 }
-console.log('in multiplyThree using 5, 6, and 2:', multiplyThree(5, 6, 2));
+console.log('from multiplyThree using 5, 6, and 2:', multiplyThree(5, 6, 2));
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
@@ -60,9 +60,9 @@ function getLast( array ) {
     return 'undefined';
   }
 }
-console.log('in getLast using [2,4,6]:', getLast([2,4,6]));
-console.log('in getLast using [2]:', getLast([2]));
-console.log('in getLast using []:', getLast([]));
+console.log('from getLast using [2,4,6]:', getLast([2,4,6]));
+console.log('from getLast using [2]:', getLast([2]));
+console.log('from getLast using []:', getLast([]));
 
 
 // 7. Function to find a value in an array. Return true if the 
@@ -79,8 +79,8 @@ function find( value, array ){
   // outside of the loop, return false (loop runs to completion, checking every index in the array)
   return false;
 }
-console.log('in find using 4 and [2,4,6]', find(4, [2,4,6]));
-console.log('in find using 5 and [2,4,6]', find(5, [2,4,6]));
+console.log('from find using 4 and [2,4,6]', find(4, [2,4,6]));
+console.log('from find using 5 and [2,4,6]', find(5, [2,4,6]));
 
 // ----------------------
 // Stretch Goals
@@ -110,8 +110,8 @@ function sumAll(array) {
   }
   return sum;
 }
-console.log('in sumAll using [2,4,6]:', sumAll([2,4,6]));
-console.log('in sumAll using [-2,4,6]:', sumAll([-2,4,6]));
+console.log('from sumAll using [2,4,6]:', sumAll([2,4,6]));
+console.log('from sumAll using [-2,4,6]:', sumAll([-2,4,6]));
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
@@ -129,10 +129,10 @@ function positiveNumbersArray(inputArray) {
   // return the new array with only positive numbers. if no positive numbers, return an empty array
   return newArray;
 }
-console.log('in positiveNumbersArray using [-1,0,2,4,6], expecting [2,4,6]:', positiveNumbersArray([-1,0,2,4,6]));
-console.log('in positiveNumbersArray using [0,-1,-2,-4,-6], expecting []:', positiveNumbersArray([0,-1,-2,-4,-6]));
-console.log('in positiveNumbersArray using [], expecting []:', positiveNumbersArray([]));
-console.log('in positiveNumbersArray using [595,4.523,-0.5,0,7], expecting [595,4.523,7]:', positiveNumbersArray([595,4.523,-0.5,0,7]));
+console.log('from positiveNumbersArray using [-1,0,2,4,6], expecting [2,4,6]:', positiveNumbersArray([-1,0,2,4,6]));
+console.log('from positiveNumbersArray using [0,-1,-2,-4,-6], expecting []:', positiveNumbersArray([0,-1,-2,-4,-6]));
+console.log('from positiveNumbersArray using [], expecting []:', positiveNumbersArray([]));
+console.log('from positiveNumbersArray using [595,4.523,-0.5,0,7], expecting [595,4.523,7]:', positiveNumbersArray([595,4.523,-0.5,0,7]));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
@@ -142,7 +142,7 @@ console.log('in positiveNumbersArray using [595,4.523,-0.5,0,7], expecting [595,
 
 function addUp(number) {
   let sumOutput = 0;
-  // for loop runs for 'number of times', counting down starting at the number argument.
+  // for loop runs for 'numbe' of times, counting down starting at the number argument.
   for(i = number; i > 0; i--) {
     //console.log(i)
     // keep track of how many times the loop runs, adding it into itself. 
@@ -150,7 +150,7 @@ function addUp(number) {
   }
   return sumOutput;
 }
-console.log('in addUp, passing 4, expecting 10 as the output:', addUp(4));
-console.log('in addUp, passing 13, expecting 91 as the output:', addUp(13));
-console.log('in addUp, passing 600, expecting 180300 as the output:', addUp(600));
+console.log('from addUp, passing 4, expecting 10 as the output:', addUp(4));
+console.log('from addUp, passing 13, expecting 91 as the output:', addUp(13));
+console.log('from addUp, passing 600, expecting 180300 as the output:', addUp(600));
 
